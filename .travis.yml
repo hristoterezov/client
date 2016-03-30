@@ -11,7 +11,8 @@ node_js:
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get install prosody luarocks
+  - sudo apt-get upgrade -y git
+  - sudo apt-get install -y prosody luarocks
   - sudo service prosody stop
   - sudo luarocks install luabitop
   - sudo cp test/resources/prosody.cfg.lua /etc/prosody/prosody.cfg.lua
