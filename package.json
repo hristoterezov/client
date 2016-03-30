@@ -9,7 +9,7 @@
     "integration-test": "grunt integration-test",
     "full-test": "grunt full-test"
   },
-  "repository": "github:node-xmpp/node-xmpp-client",
+  "repository": "github:node-xmpp/client",
   "keywords": [
     "client",
     "XMPP",
@@ -22,15 +22,15 @@
     "email": "lloyd@evilprofessor.co.uk"
   },
   "license": "MIT",
-  "bugs": "https://github.com/node-xmpp/node-xmpp-client/issues",
+  "bugs": "https://github.com/node-xmpp/client/issues",
   "dependencies": {
     "browser-request": "^0.3.3",
     "debug": "^2.2.0",
-    "faye-websocket": "^0.10.0",
     "istanbul": "^0.4.1",
     "minimist": "^1.2.0",
     "node-xmpp-core": "^5.0.0",
-    "request": "^2.65.0"
+    "request": "^2.65.0",
+    "ws": "^1.0.1"
   },
   "devDependencies": {
     "brfs": "^1.4.1",
@@ -51,10 +51,9 @@
   },
   "browser": {
     "request": "browser-request",
-    "node-stringprep": false,
-    "faye-websocket": false,
+    "ws": false,
     "./srv": false,
     "dns": false
   },
-  "homepage": "https://github.com/node-xmpp/node-xmpp-client"
+  "homepage": "https://github.com/node-xmpp/client"
 }
